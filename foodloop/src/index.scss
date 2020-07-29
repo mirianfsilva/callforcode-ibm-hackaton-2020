@@ -1,196 +1,34 @@
-@import './assets/scss/app-global-variables.scss';
+body {
+	background: #ffffff;
+	font-family: 'Lora', serif;
+	font-style: normal;
+	font-weight: 300;
+	overflow-x: hidden;
+}
 
-// Default Theme
 html {
-  --menu-color: #000000;
-  --success-color: #5fbc46;
-  --error-color: #d33;
-  --warning-color: #ffb812;
-  --background-page: #fcfdf4;
-  --block-size: 115px;
-  --border: #9d9d9d;
-  --news-info: #9d9d9d;
-  --add-event: #ee3123;
+    -webkit-font-smoothing: antialiased;
+}
+  
+
+// Text 
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+h2 {
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+h3 {
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 0.5px;
 }
 
-// Generic Theme
-html[data-theme='generic-theme'] {
-  --primary-color: #b5c76f;
-  --secondary-color: #e0e8c3;
-  --link-color: #749370;
-  --title-color: #5c5f60;
-  --background-login-image: url('./assets/images/bgsquare.png');
-  --site-logo: url('./assets/img/foodloop-green-bg.png.png');
-}
-
-body,
-html,
-#root {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-width: 348px;
-  background: var(--background-page);
-}
-
-* {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-  outline: none;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-.btn,
-.btn-large,
-.btn-small {
-  background-color: var(--primary-color);
-}
-
-.bold {
-  font-weight: bold !important;
-}
-
-.btn:hover,
-.btn-large:hover,
-.btn-small:hover {
-  background-color: var(--secondary-color);
-}
-
-.btn:focus,
-.btn-large:focus,
-.btn-small:focus,
-.btn-large:focus,
-.btn-small:focus,
-.btn-floating:focus,
-button:focus {
-  background-color: var(--primary-color);
-}
-
-[type='checkbox'].filled-in:checked + span:not(.lever):after {
-  border-color: var(--primary-color);
-  background-color: var(--primary-color);
-}
-
-input:not([type]),
-input[type='text']:not(.browser-default),
-input[type='password']:not(.browser-default),
-input[type='email']:not(.browser-default),
-input[type='url']:not(.browser-default),
-input[type='time']:not(.browser-default),
-input[type='date']:not(.browser-default),
-input[type='datetime']:not(.browser-default),
-input[type='datetime-local']:not(.browser-default),
-input[type='tel']:not(.browser-default),
-input[type='number']:not(.browser-default),
-input[type='search']:not(.browser-default),
-textarea.materialize-textarea {
-  border-bottom-color: var(--primary-color);
-}
-
-input.invalid:not([type]),
-input.invalid:not([type]):focus,
-input.invalid[type='text']:not(.browser-default),
-input.invalid[type='text']:not(.browser-default):focus,
-input.invalid[type='password']:not(.browser-default),
-input.invalid[type='password']:not(.browser-default):focus,
-input.invalid[type='email']:not(.browser-default),
-input.invalid[type='email']:not(.browser-default):focus,
-input.invalid[type='url']:not(.browser-default),
-input.invalid[type='url']:not(.browser-default):focus,
-input.invalid[type='time']:not(.browser-default),
-input.invalid[type='time']:not(.browser-default):focus,
-input.invalid[type='date']:not(.browser-default),
-input.invalid[type='date']:not(.browser-default):focus,
-input.invalid[type='datetime']:not(.browser-default),
-input.invalid[type='datetime']:not(.browser-default):focus,
-input.invalid[type='datetime-local']:not(.browser-default),
-input.invalid[type='datetime-local']:not(.browser-default):focus,
-input.invalid[type='tel']:not(.browser-default),
-input.invalid[type='tel']:not(.browser-default):focus,
-input.invalid[type='number']:not(.browser-default),
-input.invalid[type='number']:not(.browser-default):focus,
-input.invalid[type='search']:not(.browser-default),
-input.invalid[type='search']:not(.browser-default):focus,
-textarea.materialize-textarea.invalid,
-textarea.materialize-textarea.invalid:focus,
-.select-wrapper.invalid > input.select-dropdown,
-.select-wrapper.invalid > input.select-dropdown:focus {
-  border-bottom-color: var(--error-color);
-  box-shadow: 0 1px 0 0 var(--error-color);
-}
-
-.btn:focus,
-.btn-large:focus,
-.btn-small:focus,
-.btn-floating:focus,
-button:focus {
-  background-color: var(--secondary-color);
-}
-
-* {
-  box-shadow: none !important;
-  letter-spacing: normal;
-}
-
-.page-container .tabs,
-.page-container .tabs .tab a:focus,
-.page-container .tabs .tab a:focus.active {
-  background-color: transparent !important;
-  box-shadow: none;
-  max-width: 1100px;
-}
-
-.page-container .tabs .indicator {
-  background-color: var(--primary-color);
-  height: 2px;
-}
-
-@media (min-width: 1024px) {
-  .tabs {
-    margin: 0 120px;
-  }
-  .page-container {
-    margin-top: -61px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .tabs {
-    margin: 0;
-  }
-  .page-container {
-    margin-top: -55px;
-  }
-}
-
-.page-container .tabs li a {
-  font-weight: 300;
-  color: #5d5f60 !important;
-  font-size: 12px;
-}
-
-.page-container .tabs .tab a.active {
-  font-weight: bold;
-  font-size: 12px;
-}
-.page-container .row {
-  margin-bottom: 0;
-}
-
-.tab-body {
-  padding: 3vh 0vw !important;
-}
-
-.ok-alert-button {
-  background-color: var(--primary-color) !important;
-}
-
-.confirm-alert-button {
-  background-color: var(--success-color) !important;
-}
