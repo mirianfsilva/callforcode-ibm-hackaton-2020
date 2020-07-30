@@ -16,13 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
     
 }));
-/* para alinhar o rolê 
-.MuiGrid-spacing-xs-3 {
-    width: calc(100% + 24px);
-    /* margin: -12px; */
-//   justify-content: center;
-//}
-// 
+
 export default function OurProposal(props) {
     const classes = useStyles();
 
