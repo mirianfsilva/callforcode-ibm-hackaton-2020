@@ -30,28 +30,28 @@ export default function Footer(props) {
                 <Typography component="h4" variant="inherit" align="center" color="initial" paragraph>
                     WHERE WE ARE
                 </Typography>
-                <List component="nav" className={classes.root} justify="center">
-                    <ListItem >
-                        <ListItemText primary="Inbox" />
-                        <ListItemText primary="Inbox" />
-                        <ListItemText primary="Inbox" />
-                        <ListItemText primary="Inbox" />
+                <List variant="inherit" align="center" color="initial" className={classes.root} justify="center">
+                    <ListItem variant="inherit" align="center" color="initial">
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
                     </ListItem>
-                    <ListItem >
-                        <ListItemText primary="Drafts" />
-                        <ListItemText primary="Drafts" />
-                        <ListItemText primary="Drafts" />
-                        <ListItemText primary="Drafts" />
+                    <ListItem variant="inherit" align="center" color="initial">
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
                     </ListItem>
-                    <ListItem >
-                        <ListItemText primary="Drafts" />
-                        <ListItemText primary="Drafts" />
-                        <ListItemText primary="Drafts" />
-                        <ListItemText primary="Drafts" />
+                    <ListItem variant="inherit" align="center" color="initial">
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
+                        <ListItemText primary="Belo Horizonte" />
                     </ListItem>
                     <Divider />
-                    <ListItem >
-                        <ListItemText primary="Spam" />
+                    <ListItem variant="inherit" align="center" color="initial">
+                        <ListItemText primary="Contact Us" />
                         <ListItemText primary=" " />
                         <ListItemText primary=" " />
                         <ListItemText primary=" " />
