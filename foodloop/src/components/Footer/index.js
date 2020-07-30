@@ -4,15 +4,12 @@ import './style.scss';
 
 function Footer() {
     return (
+        
         <div className="Footer">
             <a href="/">
-                <img src={logo} alt="foodloop logo" />
+                <img src={logo} alt="foodloop logo" className="img-footer" />
             </a>
-            <p>
-                Orgulhosamente criado por Mini, segue lá no twitter (tenho 2)!
-            {' '}
-                <a href="/"></a>
-            </p>
+            <p> © Copyright 2020 - FoodLoop - All rights reserved FoodLoop </p>
         </div>
     );
 }

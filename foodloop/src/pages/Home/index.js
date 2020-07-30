@@ -1,23 +1,24 @@
 import React from 'react';
 import Menu from '../../components/Navbar'
-// import dadosIniciais from '../../data/dados_iniciais.json';
-// import BannerMain from '../../components/BannerMain';
-import Footer from '../../components/Footer';
+import FooterPage from '../../components/Footer';
+import OurProposal from '../../components/Proposal';
+import image1 from './../../assets/img/img1.png';
+import image2 from './../../assets/img/img2.png';
+import image3 from './../../assets/img/img3.png';
 
 function Home() {
-  return (
-    <div style={{ background: "#fcfdf4" }}>
-      <Menu />
-
-      {/* <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa!"}
-      /> */}
-
-      <Footer />
-    </div>
-  );
+    return (
+        <div style={{ background: "#fcfdf4" }}>
+            <Menu />
+            <OurProposal img={image2}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type.
+            </OurProposal>
+        
+            <FooterPage />
+        </div>
+    );
 }
 
 export default Home;
