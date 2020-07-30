@@ -1,13 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        // "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: 'Poppins', sans-serif;
 }
+
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-spinner-wordpress.sk-spinner {
+    background-color: #749370;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    -webkit-animation: sk-innerCircle 1s linear infinite;
+    animation: sk-innerCircle 1s linear infinite;
+}
+
+.sk-spinner-wordpress .sk-inner-circle {
+    display: block;
+    background-color: #ffffff;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    border-radius: 8px;
+    top: 5px;
+    left: 5px;
+}
+
+@-webkit-keyframes sk-innerCircle {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-innerCircle {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+// cor do botão subscribe #b5c76f
+// cor do botão login #749370
+// cor do background #fcfdf4
