@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, Grid, CardMedia, CardContent, Typography } from '@material-ui/core';
+import { Card, Grid, CardMedia, CardContent, Typography, Container } from '@material-ui/core';
 import image1 from './../../assets/img/img1.png';
 import image2 from './../../assets/img/img2.png';
 import image3 from './../../assets/img/img3.png';
@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
         height: 0,
         paddingTop: '65.25%', // 16:9
     },
+    heroContent: {
+        height: 500,
+        backgroundColor: theme.palette.background.paper,
+        padding: theme.spacing(6, 6, 12, 6),
+    },
     
 }));
 
@@ -22,6 +27,10 @@ export default function OurProposal(props) {
 
     return (
         <div className={classes.root}>
+            <Container className={classes.heroContent} style={{ backgroundColor: '#fff' }}>    
+            <Typography component="h4" variant="inherit" align="center" color="initial" paragraph>
+                OUR PROPOSAL
+            </Typography>
             <Grid container spacing={3} justify="center">
                 <Grid item xs={6} sm={3}>
                     <Card>
@@ -66,52 +75,8 @@ export default function OurProposal(props) {
                     </Card>
                 </Grid>
             </Grid>
+            </Container>
         </div>
     );
-    /*<div className={classes.root}>
-        <Grid container spacing={1}>
-                <Card>
-                    <CardMedia
-                        className={classes.media}
-                        image={props.children}
-                    />
-                    <CardContent>
-                        <Typography variant="body" color="text" component="p">
-                            On sait depuis longtemps que travailler avec du texte lisible et
-                            contenant du sens est source de distractions.
-                        </Typography>
-                    </CardContent>
-                </Card>
-            
-            
-                <Card>
-                    <CardMedia
-                        className={classes.media}
-                        image={props.children}
-                    />
-                    <CardContent>
-                        <Typography variant="body" color="text" component="p">
-                            On sait depuis longtemps que travailler avec du texte lisible et
-                            contenant du sens est source de distractions.
-                        </Typography>
-                    </CardContent>
-                </Card>
-            
-                <Card>
-                    <CardMedia
-                        className={classes.media}
-                        image={props.children}
-                    />
-                    <CardContent>
-                        <Typography variant="body" color="text" component="p">
-                            On sait depuis longtemps que travailler avec du texte lisible et
-                            contenant du sens est source de distractions.
-                        </Typography>
-                    </CardContent>
-                </Card>
-            
-        </Grid>
-    </div>
-);*/
 }
 
