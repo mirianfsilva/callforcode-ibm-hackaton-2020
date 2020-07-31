@@ -31,7 +31,7 @@ export default function Footer(props) {
                 <Typography component="h4" variant="inherit" align="center" color="initial" paragraph>
                     WHERE WE ARE
                 </Typography>
-                <List variant="inherit" align="center" color="initial" className={classes.root} justify="center" paragraph>
+                <List variant="inherit" align="center" color="initial" className={classes.root} justify="center">
                     <ListItem variant="inherit" align="center" color="initial">
                         <ListItemText primary="Belo Horizonte" />
                         <ListItemText primary="Belo Horizonte" />
