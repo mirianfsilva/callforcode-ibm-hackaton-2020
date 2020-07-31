@@ -2,10 +2,12 @@
 
 .Logo {
     max-width: 170px;
+    margin-left: 5em;
 }
 @media (max-width: 800px) {
     .Logo {
         max-width: 100px;
+        margin-left: 0;
     }
 }
 

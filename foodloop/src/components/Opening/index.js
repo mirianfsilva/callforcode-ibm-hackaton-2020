@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Button, Typography, CssBaseline, Grid, Card, CardActionArea, CardContent, CardMedia, Hidden } from '@material-ui/core/';
+import { Container, Button, Typography, Grid, Card, CardActionArea, CardContent, CardMedia, Hidden } from '@material-ui/core/';
+import { withStyles } from '@material-ui/core/styles';
 import boxfoodloop from "./../../assets/img/box-mock.png";
 import bg from "./../../assets/img/bg-square.png";
-import image3 from './../../assets/img/img3.png';
 
 const useStyles = makeStyles((theme) => ({
     icon: {
@@ -14,6 +14,8 @@ const useStyles = makeStyles((theme) => ({
         height: 500,
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(12, 0, 6),
+        backgroundImage: `url(${bg})`,
+        backgroundRepeat: 'round',
     },
     cardGrid: {
         paddingTop: theme.spacing(8),
@@ -45,6 +47,14 @@ const useStyles = makeStyles((theme) => ({
     
 }));
 
+const ColorButton = withStyles((theme) => ({
+    root: {
+      backgroundColor: '#B5C76F',
+      '&:hover': {
+        backgroundColor: '#9CB14E',
+      },
+    },
+  }))(Button);
 
 export default function Opening(props) {
     const classes = useStyles();
@@ -59,13 +69,15 @@ export default function Opening(props) {
                             color="initial" gutterBottom>
                             FoodLoop
                         </Typography>
-                        <Typography variant="inherit" align="left" color="initial" paragraph>
+                        <Typography style={{fontSize: '20px'}} variant="inherit" align="left" color="initial" paragraph>
                             Connect with the community, Reconnect with the world!
                         </Typography>
                         <div className={classes.menuButton}>
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
-                                <Button style={{ backgroundColor: '#749370' }} variant="contained" color="inherit">Subscribe</Button>
+                                    <ColorButton variant="contained" color="primary">
+                                        Subscribe
+                                    </ColorButton>
                                 </Grid>
                             </Grid>
                         </div>
