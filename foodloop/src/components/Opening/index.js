@@ -37,6 +37,11 @@ const useStyles = makeStyles((theme) => ({
     cardContent: {
         flexGrow: 1,
     },
+    menuButton: {
+        marginRight: theme.spacing(6),
+        marginLeft: theme.spacing(6),
+        color: "#fff",
+    },
     
 }));
 
@@ -57,12 +62,10 @@ export default function Opening(props) {
                         <Typography variant="inherit" align="left" color="initial" paragraph>
                             Connect with the community, Reconnect with the world!
                         </Typography>
-                        <div className={classes.heroButtons}>
+                        <div className={classes.menuButton}>
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
-                                    <Button variant="contained" color="primary">
-                                        Subscribe
-                                    </Button>
+                                <Button style={{ backgroundColor: '#749370' }} variant="contained" color="inherit">Subscribe</Button>
                                 </Grid>
                             </Grid>
                         </div>

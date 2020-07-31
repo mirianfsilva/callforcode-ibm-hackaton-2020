@@ -41,7 +41,7 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                We offer a service to help you know your local farmer and eat more healthy.
+                                We offer a service to help you know your local farmer and eat more healthy. 
                             </Typography>
                         </CardContent>
                     </Card>
@@ -54,8 +54,7 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                The boxes are individually constructed following an algorimactly solution for your 
-                                nutrition needs. 
+                                We offer a service to help you know your local farmer and eat more healthy. 
                             </Typography>
                         </CardContent>
                     </Card>
@@ -68,7 +67,7 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                and the locally accessible foods produced in your region.
+                                We offer a service to help you know your local farmer and eat more healthy. 
                             </Typography>
                         </CardContent>
                     </Card>
