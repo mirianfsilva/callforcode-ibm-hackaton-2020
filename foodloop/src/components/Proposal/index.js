@@ -4,6 +4,7 @@ import { Card, Grid, CardMedia, CardContent, Typography, Container } from '@mate
 import image1 from './../../assets/img/img1.png';
 import image2 from './../../assets/img/img2.png';
 import image3 from './../../assets/img/img3.png';
+import './style.scss';
 
 // Link a style sheet with a function component using the hook pattern.
 const useStyles = makeStyles((theme) => ({
@@ -41,7 +42,7 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                We offer a service to help you know your local farmer and eat more healthy. 
+                                On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions. 
                             </Typography>
                         </CardContent>
                     </Card>
@@ -54,7 +55,7 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                We offer a service to help you know your local farmer and eat more healthy. 
+                                n sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -67,7 +68,7 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                We offer a service to help you know your local farmer and eat more healthy. 
+                                On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions.
                             </Typography>
                         </CardContent>
                     </Card>
