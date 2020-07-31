@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from '../../components/Navbar'
 import FooterPage from '../../components/Footer';
 
-function Login() {
+function LoginAs() {
     return (
         <div style={{ background: "#fcfdf4" }}>
             <Menu />
@@ -12,4 +12,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default LoginAs;
