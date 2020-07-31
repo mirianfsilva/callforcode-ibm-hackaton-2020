@@ -41,8 +41,9 @@ export default function OurProposal(props) {
                             image={image1}
                         />
                         <CardContent>
-                            <Typography variant="inherit" color="initial" component="p">
-                                On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions. 
+                            <Typography align="justify" variant="inherit" color="initial" component="p">
+                                Give space for small farmers and producers to gain recognition, while 
+                                providing eco-friendly food with quality for our clients.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -54,8 +55,8 @@ export default function OurProposal(props) {
                             image={image2}
                         />
                         <CardContent>
-                            <Typography variant="inherit" color="initial" component="p">
-                                n sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions.
+                            <Typography align="justify" variant="inherit" color="initial" component="p">
+                                Respect the nature and use recycle material to produce our boxes, priorize our costumers and their needs.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -67,8 +68,8 @@ export default function OurProposal(props) {
                             image={image3}
                         />
                         <CardContent>
-                            <Typography variant="inherit" color="initial" component="p">
-                                On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions.
+                            <Typography align="justify" variant="inherit" color="initial" component="p">
+                                Respect the nature and use recycle material to produce our boxes, priorize our costumers and their needs.
                             </Typography>
                         </CardContent>
                     </Card>

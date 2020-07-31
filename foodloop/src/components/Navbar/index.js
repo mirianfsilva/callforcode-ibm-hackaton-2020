@@ -56,12 +56,11 @@ export default function Menu(props) {
                         <ListItem variant="inherit" align="center" color="initial" className={classes.menuList}>
                             <ListItemLink primary="HOME" to="/" />
                             <ListItemLink primary="OUR PROPOSAL" to="/" />
-                            <ListItemLink primary="PLANS" to="/" />
                             <ListItemLink primary="ABOUT" to="/About" />
                             <ListItemLink primary="CONTACT" to="/"/>
                         </ListItem>
                     </List>
-                    <Button style={{ backgroundColor: '#749370' }} color="inherit">Login</Button>
+                    <Button style={{ backgroundColor: '#749370' }} color="inherit" href="/login">Login</Button>
                 </Toolbar>
             </AppBar>
             <Toolbar />

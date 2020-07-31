@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 200,
     },
     cardMediaBg: {
-        width: 300, 
+        width: 300,
     },
     media: {
         height: 0,
@@ -44,17 +44,17 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: theme.spacing(6),
         color: "#fff",
     },
-    
+
 }));
 
 const ColorButton = withStyles((theme) => ({
     root: {
-      backgroundColor: '#B5C76F',
-      '&:hover': {
-        backgroundColor: '#9CB14E',
-      },
+        backgroundColor: '#B5C76F',
+        '&:hover': {
+            backgroundColor: '#9CB14E',
+        },
     },
-  }))(Button);
+}))(Button);
 
 export default function Opening(props) {
     const classes = useStyles();
@@ -69,13 +69,17 @@ export default function Opening(props) {
                             color="initial" gutterBottom>
                             FoodLoop
                         </Typography>
-                        <Typography style={{fontSize: '20px'}} variant="inherit" align="left" color="initial" paragraph>
+                        <Typography style={{ fontSize: '20px' }} variant="inherit" align="left" color="initial" paragraph>
                             Connect with the community, Reconnect with the world!
+                        </Typography>
+                        <Typography variant="inherit" align="left" color="initial" paragraph>
+                            Connect more directly with local farmers. All your food grown locally, in urban farms or
+                            within the region, it’s seasonal and ecological.
                         </Typography>
                         <div className={classes.menuButton}>
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
-                                    <ColorButton variant="contained" color="primary">
+                                    <ColorButton variant="contained" color="primary" href="/Subscribe">
                                         Subscribe
                                     </ColorButton>
                                 </Grid>
