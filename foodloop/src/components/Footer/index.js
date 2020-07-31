@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: '65.25%', // 16:9
     },
     heroContent: {
-        height: 500,
+        height: 300,
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6, 6, 12, 6),
         fontFamily: 'Poppins',
@@ -32,12 +32,6 @@ export default function Footer(props) {
                     WHERE WE ARE
                 </Typography>
                 <List variant="inherit" align="center" color="initial" className={classes.root} justify="center">
-                    <ListItem variant="inherit" align="center" color="initial">
-                        <ListItemText primary="Belo Horizonte" />
-                        <ListItemText primary="Belo Horizonte" />
-                        <ListItemText primary="Belo Horizonte" />
-                        <ListItemText primary="Belo Horizonte" />
-                    </ListItem>
                     <ListItem variant="inherit" align="center" color="initial">
                         <ListItemText primary="Belo Horizonte" />
                         <ListItemText primary="Belo Horizonte" />
