@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     heroContent: {
         height: 300,
         padding: theme.spacing(6, 0, 6, 0),
+        marginBottom: 50,
     },
     cardMedia: {
         flexGrow: 1,
@@ -32,9 +33,9 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.common.white,
         marginBottom: theme.spacing(2),
         backgroundImage: 'url(image)',
-        // backgroundSize: 'cover',
-        // backgroundRepeat: 'no-repeat',
-        // backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
     },
     mainFeaturedPostContent: {
         position: 'relative',
@@ -57,15 +58,13 @@ export default function PlansSection(props) {
                         <Card>
                             <CardContent>
                                 <Typography component="h4" variant="inherit" align="center" color="initial" gutterBottom>
-                                    OUR PROPOSAL
+                                    PLAN SECTION
                                 </Typography>
                                 <Typography variant="inherit" color="initial" paragraph>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                     the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                                     of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                                    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.
                                 </Typography>
                                 <Link variant="inherit" href="#">
                                     link

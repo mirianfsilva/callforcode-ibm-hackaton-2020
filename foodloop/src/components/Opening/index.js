@@ -29,8 +29,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 200,
     },
     cardMediaBg: {
-        width: 300,
-        // padding: 600, 
+        width: 300, 
     },
     media: {
         height: 0,
@@ -56,9 +55,7 @@ export default function Opening(props) {
                             FoodLoop
                         </Typography>
                         <Typography variant="inherit" align="left" color="initial" paragraph>
-                            Something short and leading about the collection below—its contents, the creator, etc.
-                            Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-                            entirely.
+                            Connect with the community, Reconnect with the world!
                         </Typography>
                         <div className={classes.heroButtons}>
                             <Grid container spacing={2} justify="center">

@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
         height: 500,
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6, 6, 12, 6),
+        marginBottom: 50,
     },
     
 }));
@@ -40,9 +41,8 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                On sait depuis longtemps que travailler avec du texte lisible et
-                                contenant du sens est source de distractions.
-                      </Typography>
+                                We offer a service to help you know your local farmer and eat more healthy.
+                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -54,9 +54,9 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                On sait depuis longtemps que travailler avec du texte lisible et
-                                contenant du sens est source de distractions.
-                      </Typography>
+                                The boxes are individually constructed following an algorimactly solution for your 
+                                nutrition needs. 
+                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -68,9 +68,8 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography variant="inherit" color="initial" component="p">
-                                On sait depuis longtemps que travailler avec du texte lisible et
-                                contenant du sens est source de distractions.
-                      </Typography>
+                                and the locally accessible foods produced in your region.
+                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>

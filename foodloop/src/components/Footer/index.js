@@ -7,7 +7,7 @@ import './style.scss'
 // Link a style sheet with a function component using the hook pattern.
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
     },
     media: {
         height: 0,
@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
         height: 500,
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6, 6, 12, 6),
+        fontFamily: 'Poppins',
     },
 
 }));
@@ -30,7 +31,7 @@ export default function Footer(props) {
                 <Typography component="h4" variant="inherit" align="center" color="initial" paragraph>
                     WHERE WE ARE
                 </Typography>
-                <List variant="inherit" align="center" color="initial" className={classes.root} justify="center">
+                <List variant="inherit" align="center" color="initial" className={classes.root} justify="center" paragraph>
                     <ListItem variant="inherit" align="center" color="initial">
                         <ListItemText primary="Belo Horizonte" />
                         <ListItemText primary="Belo Horizonte" />
@@ -69,10 +70,3 @@ export default function Footer(props) {
         </div>
     );
 }
-
-// <Grid item xs={12} sm={6} justify="center">
-                    
-//                     </Grid>
-//                     <Grid item xs={12} sm={6} justify="center">
-//                         <p>  </p>
-//                     </Grid>
