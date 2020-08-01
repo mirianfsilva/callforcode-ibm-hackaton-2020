@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     heroContent: {
         height: 500,
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(12, 0, 12, 0),
+        padding: theme.spacing(5, 0, 12, 0),
         backgroundImage: `url(${bg})`,
         backgroundRepeat: 'round',
     },
@@ -27,32 +27,14 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
     },
     cardMedia: {
-        flexGrow: 1,
-        width: 80,
-        padding: 200,
-        color: theme.palette.common.white,
-        backgroundImage: 'url(image)',
-        display: 'flex',
-        flexWrap: 'wrap',
-        position: 'relative',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        width: 40,
+        padding: 278,
     },
     cardContent: {
         flexGrow: 1,
     },
     
 }));
-
-const ColorButton = withStyles((theme) => ({
-    root: {
-        backgroundColor: '#B5C76F',
-        '&:hover': {
-            backgroundColor: '#9CB14E',
-        },
-    },
-}))(Button);
 
 export default function SubscribePage(props) {
     const classes = useStyles();
@@ -61,12 +43,7 @@ export default function SubscribePage(props) {
         <div className={classes.heroContent} style={{ backgroundColor: '#fcfdf4' }}>
             <Container maxWidth="sm">
                 <Grid container spacing={1}>
-                    <Grid item xs={12} sm={6}>
-                        <CardMedia className={classes.cardMedia} image={subscribe} />
-                    </Grid>
-                    <Hidden xsDown>
-                        <CardMedia className={classes.cardMediaBg} image={bg} />
-                    </Hidden>
+                    <CardMedia className={classes.cardMedia} image={subscribe} />
                 </Grid>
             </Container>
         </div>

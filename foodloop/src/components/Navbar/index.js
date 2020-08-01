@@ -55,7 +55,6 @@ export default function Menu(props) {
                     <List variant="inherit" align="center" color="initial" className={classes.menuButton} justify="center">
                         <ListItem variant="inherit" align="center" color="initial" className={classes.menuList}>
                             <ListItemLink primary="HOME" to="/" />
-                            <ListItemLink primary="OUR PROPOSAL" to="/" />
                             <ListItemLink primary="ABOUT" to="/About" />
                             <ListItemLink primary="CONTACT" to="/"/>
                         </ListItem>
