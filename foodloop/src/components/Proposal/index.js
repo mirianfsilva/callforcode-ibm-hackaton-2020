@@ -42,8 +42,8 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography align="justify" variant="inherit" color="initial" component="p">
-                                Give space for small farmers and producers to gain recognition, while 
-                                providing eco-friendly food with quality for our clients.
+                                Small farmers produce food sustainably to their community, and receive 
+                                suggestions based on the local demand.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -56,7 +56,8 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography align="justify" variant="inherit" color="initial" component="p">
-                                Respect the nature and use recycle material to produce our boxes, priorize our costumers and their needs.
+                                Our boxes are individually created, optimized for your diet, with the food 
+                                from your neighbour producers.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -69,7 +70,8 @@ export default function OurProposal(props) {
                         />
                         <CardContent>
                             <Typography align="justify" variant="inherit" color="initial" component="p">
-                                Respect the nature and use recycle material to produce our boxes, priorize our costumers and their needs.
+                                Community-supported small farmers is an option to reduce the 
+                                effects of the actual system have in climatic change.
                             </Typography>
                         </CardContent>
                     </Card>

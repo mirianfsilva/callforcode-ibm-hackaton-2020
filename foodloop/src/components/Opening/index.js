@@ -7,6 +7,9 @@ import boxfoodloop from "./../../assets/img/box-mock.png";
 import bg from "./../../assets/img/bg-square.png";
 
 const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
     icon: {
         marginRight: theme.spacing(2),
     },
@@ -62,31 +65,27 @@ export default function Opening(props) {
 
     return (
         <div className={classes.heroContent} style={{ backgroundColor: '#fcfdf4' }}>
-            <Container maxWidth="sm">
-                <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}>
-                        <Typography component="h2" variant="inherit" align="center"
+            <Container maxWidth="lg">
+                <Grid container spacing={1}>
+                    <Grid item xs={6}>
+                        <Typography style={{ color: '#42443e' }} component="h2" variant="inherit" align="center"
                             color="initial" gutterBottom>
                             FoodLoop
                         </Typography>
                         <Typography style={{ fontSize: '20px' }} variant="inherit" align="left" color="initial" paragraph>
-                            Connect with the community, Reconnect with the world!
+                            <i><b>Connect with the community, Reconnect with the world!</b></i>
                         </Typography>
                         <Typography variant="inherit" align="left" color="initial" paragraph>
                             Connect more directly with local farmers. All your food grown locally, in urban farms or
                             within the region, it’s seasonal and ecological.
                         </Typography>
                         <div className={classes.menuButton}>
-                            <Grid container spacing={2} justify="center">
-                                <Grid item>
-                                    <ColorButton variant="contained" color="primary" href="/Subscribe">
-                                        Subscribe
-                                    </ColorButton>
-                                </Grid>
-                            </Grid>
+                            <ColorButton variant="contained" color="primary" href="/Subscribe">
+                                Subscribe
+                            </ColorButton>
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={6}>
                         <CardMedia className={classes.cardMedia} image={boxfoodloop} />
                     </Grid>
                     <Hidden xsDown>
