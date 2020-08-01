@@ -56,22 +56,12 @@ export default function PlansSection(props) {
                     <div className={classes.mainFeaturedPostContent}>
                         <Card>
                             <CardContent>
-                                <Typography component="h4" variant="inherit" align="center" color="initial" gutterBottom>
-                                    PLAN SECTION
+                                <Typography variant="inherit" component="h4" color="initial"  style={{ color: '#42443e' }} align="justify" paragraph>
+                                    Different food system already exists around the world. One particular efficient one is the 
+                                    Community-Supported Agriculture (CSA) system. In these model, farmers and consumers are more 
+                                    connected and their interactions allows for mutual gains. Farmers have a known market to sell
+                                    their goods, and consumers have a known source of eco-friendly and sustainable food.
                                 </Typography>
-                                <Typography variant="inherit" color="initial" paragraph>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                    when an unknown printer took a galley of type and scrambled it to make a type 
-                                    specimen book. It has survived not only five centuries, but also the leap into
-                                    electronic typesetting, remaining essentially unchanged. It was popularised in 
-                                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                                    and more recently with desktop publishing software like Aldus PageMaker including
-                                    versions of Lorem Ipsum.
-                                </Typography>
-                                <Link variant="inherit" href="#">
-                                    link
-                                </Link>
                             </CardContent>
                         </Card>
                     </div>
