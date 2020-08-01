@@ -46,12 +46,14 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(6),
         marginLeft: theme.spacing(6),
         color: "#fff",
+        margin: '0 !important',
     },
 
 }));
 
 const ColorButton = withStyles((theme) => ({
     root: {
+        margin: 0,
         backgroundColor: '#B5C76F',
         '&:hover': {
             backgroundColor: '#9CB14E',
