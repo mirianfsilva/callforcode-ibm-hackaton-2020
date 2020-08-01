@@ -2,8 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link, Paper, Card, Grid, CardMedia, CardContent, Typography, Container, TextareaAutosize } from '@material-ui/core';
 import './../../../src/index.scss';
-import agriculture from './../../assets/img/agriculture.jpg'
-import smallfarmer from './../../assets/img/small-farmer.png'
+import agriculture from './../../assets/img/agriculture.jpg';
+import smallfarmer from './../../assets/img/small-farmer.png';
+import machinelearning from './../../assets/img/ml-op-ibm.jpeg';
 import './style.scss';
 // Link a style sheet with a function component using the hook pattern.
 const useStyles = makeStyles((theme) => ({
@@ -55,10 +56,6 @@ export default function HowItWorks(props) {
                         With a progress to give more space to local farmers, more families can support an ecological 
                         small business, have a better diet and <b>help the world with these little changings</b>.
 
-                        {/* Water access can drastically change globally as consequences of <b>climate changes</b>, with some 
-                        regions being more affected than others and practically unable to sustain agriculture, as some regions in Chile*.
-                        Even though the agriculture industry achieves new highs in food production, in the world about 820 
-                        million people, in 2018, suffered from undernourishment.* */}
                         <br/><br/>
                         We have small farmers all around the world. These people live by and 
                         for their farms. They produce food organically and sustainably.
@@ -92,6 +89,9 @@ export default function HowItWorks(props) {
                 </Typography>
             </Container>
 
+            <Container className={classes.cardMedia} style={{ backgroundImage: `url(${machinelearning})` }}>    
+                {<img style={{ display: 'none' }} src={machinelearning} />}
+            </Container>
             <Container className={classes.heroContent} style={{ backgroundColor: '#fff' }}>    
                 <Typography variant="inherit" color="initial" paragraph>
                     <br/>
