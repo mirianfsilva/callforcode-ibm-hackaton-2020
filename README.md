@@ -43,4 +43,4 @@ Link: https://foodloop.vercel.app/
 ### Video pitch
 Link: https://www.youtube.com/watch?v=rnHUVLK_QbE&feature=youtu.be
 
-![](foodloop/src/assets/img/prototype.png)
+![SolutionSite](foodloop/src/assets/img/prototype.png)
